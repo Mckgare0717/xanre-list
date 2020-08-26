@@ -1,0 +1,39 @@
+{% extends 'base.html'%}
+
+{% load static %}
+{% block title %}
+      <title>welcome to my world!!1</title>
+{% endblock title %}
+      
+
+
+{% block content %}
+    <div class='container'>
+        <div class='row mt-5'>
+            <div class="col-lg-4">
+                <img src="{% static 'images/img.jpg' %}" alt="notes" class="rounded-lg shadow-lg" width="360" height="250">
+            </div>
+
+            <div class="col-lg-4">
+                <img src="{% static 'images/img1.jpg' %}" alt="notes" class="rounded-lg shadow-lg " width="360" height="250">
+            </div>
+
+            <div class="col-lg-4">
+                <img src="{% static 'images/img2.jpg' %}" alt="notes" class="rounded-lg shadow-lg"  width="360" height="250">
+            </div>
+
+            <div class="row lg-5 ">
+                <div  class="col-md-12 offset-md-3">
+                    <center><p class="h1 shadow-lg text-danger">Quick and easy to use,any where and anytime</p></center>
+                    <center><p class="h2 shadow-lg text-danger">Keep a note of your daily task</p></center>
+                    <center><p class="h5 shadow-lg text-danger">plan your day using this</p></center>
+                    <center><a href="{% url 'todolist_app' %}"><button type="button" class="btn btn-primary btn-lg md-3">Let's Get Started</button></a></center>
+                </div>
+            </div>
+           
+
+
+
+        </div>
+    </div>
+{% endblock content %}
